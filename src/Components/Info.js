@@ -147,7 +147,7 @@ const ServicesContent = styled.div`
     text-align: center;
     letter-spacing: -0.114286px;
     max-width: 339px;
-    margin-bottom: 59px;
+    margin: 0 24px 59px 24px ;
     &.cherry {
       color: #24554a;
     }

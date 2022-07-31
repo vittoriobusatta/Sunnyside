@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import Feedback from "./Components/Feedback";
+import Gallery from "./Components/Gallery";
 import Header from "./Components/Header";
 import Info from "./Components/Info";
 import Landing from "./Components/Landing";
@@ -65,6 +66,7 @@ function App() {
       <Landing />
       <Info />
       <Feedback />
+      <Gallery />
     </div>
   );
 }

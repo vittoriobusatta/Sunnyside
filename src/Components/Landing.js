@@ -19,7 +19,7 @@ const Title = styled.div`
   width: 100%;
   left: 50%;
   transform: translate(-50%, 0%);
-  top: max(19.5rem, 120px);
+  top: max(19.5rem, 130px);
   position: absolute;
 
   & h1 {
