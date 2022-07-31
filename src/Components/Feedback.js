@@ -20,7 +20,7 @@ const Container = styled.section`
   flex-direction: column;
   padding: 16rem 0 16rem 0;
   @media screen and (max-width: 768px) {
-    padding: 233px 24px;
+    padding: 64px 24px;
   }
 `;
 const Grid = styled.div`
