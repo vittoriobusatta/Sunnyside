@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import Feedback from "./Components/Feedback";
 import Header from "./Components/Header";
 import Info from "./Components/Info";
 import Landing from "./Components/Landing";
@@ -9,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    background: #FFFCF8;
     @media only screen and (min-width : 1824px) {
       font-size: 70%;
     } 
@@ -62,6 +64,7 @@ function App() {
       <Header />
       <Landing />
       <Info />
+      <Feedback />
     </div>
   );
 }
