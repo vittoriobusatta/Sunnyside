@@ -12,7 +12,6 @@ import {
   DarkGrayishBlue,
   Fraunces,
   VeryDarkDesaturatedBlue,
-  VeryDarkGrayishBlue,
 } from "../Common";
 
 const Container = styled.section`
@@ -22,12 +21,11 @@ const Container = styled.section`
 const Items = styled.div`
   height: auto;
   width: 100%;
-  flex-wrap: wrap;
   display: inline-flex;
   &.row_reverse {
     flex-direction: row-reverse;
   }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     &.column_reverse {
       flex-direction: column-reverse;
@@ -37,20 +35,22 @@ const Items = styled.div`
 const Wrap = styled.div`
   height: auto;
   width: 50%;
-  max-height: 500px;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
-    /* max-height: 312px; */
   }
 `;
 
 const Content = styled.div`
   height: 100%;
   width: auto;
-  max-width: 445px;
-  margin-top: 15.7rem;
-  margin-left: 13.8rem;
-  @media screen and (max-width: 576px) {
+  margin: 15rem 13rem;
+  @media screen and (max-width: 1224px) {
+    margin: 12rem 10rem;
+  }
+  @media screen and (max-width: 992px) {
+    margin: 9rem 6rem;
+  }
+  @media screen and (max-width: 768px) {
     margin: 64px 24px;
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@ const Image = styled.div`
   &.eggs {
     background: url(${Eggs}) no-repeat center center;
     background-size: cover;
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       background: url(${EggsMobile}) no-repeat center center;
       background-size: cover;
     }
@@ -136,15 +136,37 @@ const Image = styled.div`
   &.stand-out {
     background: url(${StandOut}) no-repeat center center;
     background-size: cover;
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       background: url(${StandOutMobile}) no-repeat center center;
       background-size: cover;
     }
   }
+  
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const ArticleContainer = styled.div`
+  height: auto;
+  width: 100%;
+  display: inline-flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+const Article = styled.div`
+  height: auto;
+  width: 50%;
+  min-height: 600px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    min-height: 800px;
+  }
   &.cherry {
     background: url(${Cherry}) no-repeat center center;
     background-size: cover;
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       background: url(${CherryMobile}) no-repeat center center;
       background-size: cover;
     }
@@ -152,13 +174,10 @@ const Image = styled.div`
   &.orange {
     background: url(${Orange}) no-repeat center center;
     background-size: cover;
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       background: url(${OrangeMobile}) no-repeat center center;
       background-size: cover;
     }
-  }
-  @media screen and (max-width: 576px) {
-    width: 100%;
   }
 `;
 
@@ -195,10 +214,12 @@ function Info() {
         <Image className="stand-out"></Image>
       </Items>
 
-      <Items>
-        <Image className="cherry">Design</Image>
-        <Image className="orange">Photography</Image>
-      </Items>
+      <ArticleContainer>
+        <Article className="cherry"></Article>
+        <Article className="orange"></Article>
+      </ArticleContainer>
+
+      {/* <Image className="orange">Photography</Image> */}
     </Container>
   );
 }
