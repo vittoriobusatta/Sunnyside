@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createGlobalStyle } from "styled-components";
+import Attribution from "./Components/Attribution";
 import Feedback from "./Components/Feedback";
 import Footer from "./Components/Footer";
 import Gallery from "./Components/Gallery";
@@ -74,6 +75,7 @@ function App() {
       <Feedback />
       <Gallery />
       <Footer />
+      <Attribution />
     </div>
   );
 }
