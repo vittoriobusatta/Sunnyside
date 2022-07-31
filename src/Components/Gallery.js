@@ -32,42 +32,43 @@ const Items = styled.div`
   }
   &#Milk {
     grid-area: 1 / 1 / 2 / 2;
-    background: url(${MilkImage});
+    background: url(${MilkImage}) no-repeat center center;
     background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
     @media screen and (max-width: 992px) {
       grid-area: 1 / 1 / 2 / 2;
+    background: url(${MilkImageMobile}) no-repeat center center;
+    background-size: cover;
     }
   }
   &#Orange {
     grid-area: 1 / 2 / 2 / 3;
-    background: url(${OrangeImage});
+    background: url(${OrangeImage}) no-repeat center center;
     background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
     @media screen and (max-width: 992px) {
       grid-area: 1 / 2 / 2 / 3;
+    background: url(${OrangeImageMobile}) no-repeat center center;
+    background-size: cover;
     }
   }
   &#Cone {
     grid-area: 1 / 3 / 2 / 4;
-    background: url(${ConeImage});
+    background: url(${ConeImage}) no-repeat center center;
     background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
     @media screen and (max-width: 992px) {
+    background: url(${ConeImageMobile}) no-repeat center center;
       grid-area: 2 / 1 / 3 / 2;
+    background-size: cover;
+
     }
   }
   &#Sugar {
     grid-area: 1 / 4 / 2 / 5;
-    background: url(${SuggarImage});
+    background: url(${SuggarImage}) no-repeat center center;
     background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
     @media screen and (max-width: 992px) {
       grid-area: 2 / 2 / 3 / 3;
+    background: url(${SuggarImageMobile}) no-repeat center center;
+    background-size: cover;
     }
   }
 `;

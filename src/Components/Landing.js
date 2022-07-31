@@ -39,6 +39,9 @@ const Title = styled.div`
       letter-spacing: 6.25px;
       text-align: center;
     }
+    @media screen and (max-width: 321px) {
+      font-size: 30px;
+    }
   }
 
   img {
@@ -47,6 +50,9 @@ const Title = styled.div`
     height: 107.48px;
     margin-left: 50%;
     transform: translate(-50%, 0%);
+    @media screen and (max-width: 321px) {
+      height: 80px;
+    }
   }
 `;
 

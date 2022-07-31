@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { createGlobalStyle } from "styled-components";
 import Feedback from "./Components/Feedback";
+import Footer from "./Components/Footer";
 import Gallery from "./Components/Gallery";
 import Header from "./Components/Header";
 import Info from "./Components/Info";
 import Landing from "./Components/Landing";
-import "./fonts.css"
+import Menu from "./Components/Menu";
+import "./fonts.css";
 import "./reset.css";
 
 const GlobalStyle = createGlobalStyle`
@@ -59,14 +62,18 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <div className="App">
       <GlobalStyle />
-      <Header />
+      <Header setOpenMenu={setOpenMenu} openMenu={openMenu} />
+      <Menu openMenu={openMenu} />
       <Landing />
       <Info />
       <Feedback />
       <Gallery />
+      <Footer />
     </div>
   );
 }

@@ -88,7 +88,10 @@ const Menu = styled.div`
   }
 `;
 
-function Header() {
+function Header({ openMenu, setOpenMenu }) {
+  const ClickMenu = () => {
+    setOpenMenu(!openMenu);
+  };
   return (
     <>
       <Container>
@@ -96,7 +99,7 @@ function Header() {
           <img src={Logo} alt="logo" />
         </LogoContainer>
         <Menu>
-          <img src={Hambuger} alt="hamburger" />
+          <img onClick={ClickMenu} src={Hambuger} alt="hamburger" />
           <ul>
             <li>About</li>
             <li>Services</li>
