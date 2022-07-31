@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { White } from "../Common";
+import { Fraunces, White } from "../Common";
 import BackgroundImage from "../images/desktop/image-header.jpg";
 import ArrowDown from "../images/icon-arrow-down.svg";
 
@@ -23,7 +23,7 @@ const Title = styled.div`
   position: absolute;
 
   & h1 {
-    font-family: "Fraunces", serif;
+    font-family: ${Fraunces};
     font-style: normal;
     font-weight: 900;
     font-size: 56px;

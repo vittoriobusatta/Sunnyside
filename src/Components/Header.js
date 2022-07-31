@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { VeryDarkDesaturatedBlue, White } from "../Common";
+import { Barlow, Fraunces, VeryDarkDesaturatedBlue, White } from "../Common";
 import Logo from "../images/logo.svg";
 import Hambuger from "../images/icon-hamburger.svg";
 
@@ -45,7 +45,7 @@ const Menu = styled.div`
     }
   }
   li {
-    font-family: "Barlow";
+    font-family: ${Barlow};
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -55,7 +55,7 @@ const Menu = styled.div`
       font-weight: 700;
       font-size: 15px;
       color: #49bcf1;
-      font-family: "Fraunces", serif;
+      font-family: ${Fraunces};
       color: ${VeryDarkDesaturatedBlue};
       background-color: #fff;
       border-radius: 28px;
